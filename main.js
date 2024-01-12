@@ -1,12 +1,11 @@
 let cards = document.querySelectorAll(".card");
-let clicked1 = []
-let clicked2 = []
+let clicked1 = [];
+let clicked2 = [];
 
 for(let i = 0 ; i < cards.length ; i++) {
   cards[i].addEventListener('click', () => {
-  cards[i].classList.add("open")}); 
+  cards[i].classList.add("open")
+  clicked1.push(cards[i].parentNode);
+  console.log(clicked1);
+});
 }
-
-
-
-
