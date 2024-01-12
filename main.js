@@ -1,7 +1,12 @@
 let cards = document.querySelectorAll(".card");
+let clicked1 = []
+let clicked2 = []
 
-cards.forEach((card) => {
-  card.addEventListener("click", function() {
-    console.log("test");
-  });
-});
+for(let i = 0 ; i < cards.length ; i++) {
+  cards[i].addEventListener('click', () => {
+  cards[i].classList.add("open")}); 
+}
+
+
+
+
